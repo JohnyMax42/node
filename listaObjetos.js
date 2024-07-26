@@ -15,4 +15,4 @@ let listaObjetos = [
     }
 ]
 
-module.exports('listaObjetos.js')
+module.exports = listaObjetos;
