@@ -12,17 +12,17 @@ class Animal{
     }
 //metodos
 falar(){
-    console.log(`O animal ${this.nome} fez algum som`)
+    console.log(`O animal ${this.getNome()} fez algum som`)
 }
 comer(){
-    console.log(`O animal ${this.nome} comeu`);
+    console.log(`O animal ${this.getNome()} comeu`);
 }
 dormir(){
-    console.log(`O animal ${this.nome} dormiu`)
+    console.log(`O animal ${this.getNome()} dormiu`)
 }
 
 getNome(){return this.#nome;}
-set(nome){this.#nome = nome;}
+setNome(nome){this.#nome = nome;}
 }
 
 const animal1 = new Animal('gato', 'gordo', 'cinza', 'Kira')
@@ -35,3 +35,5 @@ console.log(animal1.getNome())
 
 const animal2 = new Animal('cachorro', 'pequeno', 'branco', 'Buguelo')
 console.log(animal2.nome)
+
+module.exports = Animal;
