@@ -1,5 +1,5 @@
 const fs = require('fs')
-const pets = require('./listaObjetos')
+const pets = require('../node02/listaObjetos')
 const caminho = './arquivosTexto'
 const codificacao = 'utf-8'
 const nomeArquivo = 'pets.json'
